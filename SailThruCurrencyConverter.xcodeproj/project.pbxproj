@@ -9,20 +9,20 @@
 /* Begin PBXBuildFile section */
 		5FEF19839D7AF33007EE0A74 /* Pods_SailThruCurrencyConverter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0377B7D5CA5731FDE3EDED6 /* Pods_SailThruCurrencyConverter.framework */; };
 		67DE0D701FB772750046195A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE0D6F1FB772750046195A /* AppDelegate.swift */; };
-		67DE0D721FB772750046195A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE0D711FB772750046195A /* ViewController.swift */; };
 		67DE0D751FB772750046195A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DE0D731FB772750046195A /* Main.storyboard */; };
 		67DE0D771FB772750046195A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67DE0D761FB772750046195A /* Assets.xcassets */; };
 		67DE0D7A1FB772750046195A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 67DE0D781FB772750046195A /* LaunchScreen.storyboard */; };
+		67DE0D821FB7743A0046195A /* CurrencyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE0D811FB7743A0046195A /* CurrencyTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67DE0D6C1FB772750046195A /* SailThruCurrencyConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SailThruCurrencyConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67DE0D6F1FB772750046195A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		67DE0D711FB772750046195A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		67DE0D741FB772750046195A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		67DE0D761FB772750046195A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67DE0D791FB772750046195A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		67DE0D7B1FB772750046195A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67DE0D811FB7743A0046195A /* CurrencyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewController.swift; sourceTree = "<group>"; };
 		97704521A8F2D3E705FF859A /* Pods-SailThruCurrencyConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailThruCurrencyConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SailThruCurrencyConverter/Pods-SailThruCurrencyConverter.release.xcconfig"; sourceTree = "<group>"; };
 		9F9A489DE66A4BF6D377F9B1 /* Pods-SailThruCurrencyConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailThruCurrencyConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SailThruCurrencyConverter/Pods-SailThruCurrencyConverter.debug.xcconfig"; sourceTree = "<group>"; };
 		D0377B7D5CA5731FDE3EDED6 /* Pods_SailThruCurrencyConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SailThruCurrencyConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				67DE0D6F1FB772750046195A /* AppDelegate.swift */,
-				67DE0D711FB772750046195A /* ViewController.swift */,
+				67DE0D811FB7743A0046195A /* CurrencyTableViewController.swift */,
 				67DE0D731FB772750046195A /* Main.storyboard */,
 				67DE0D761FB772750046195A /* Assets.xcassets */,
 				67DE0D781FB772750046195A /* LaunchScreen.storyboard */,
@@ -211,7 +211,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67DE0D721FB772750046195A /* ViewController.swift in Sources */,
+				67DE0D821FB7743A0046195A /* CurrencyTableViewController.swift in Sources */,
 				67DE0D701FB772750046195A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

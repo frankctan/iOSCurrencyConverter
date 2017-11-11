@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14AF973C15798EC3B1A5F09E9421A4F0 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9797B8E34535DD121BAFDE4253AA1F /* SwiftyJSON-dummy.m */; };
+		2F7DF0EED628B2CAAE6C85389B2F5F4C /* Pods-SailThruCurrencyConverter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78006E4A698C966D57BBA91BF6AC0F08 /* Pods-SailThruCurrencyConverter-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		619BCADCB13E80A121D2053C69A7DA05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7171AE1955F6200FCEB4A82B2332F532 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF390D267034D1943FB113A474122C0F /* SwiftyJSON.swift */; };
+		A38633FFD36BFC33CD34749204490A4B /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B9682B8E3FCE5EE8B97F87FCC5BADF7B /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C99BD7DDAA280FE1E4AAF5D509BD6C10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E8C258FD2151352460EF25D88490D6D2 /* Pods-SailThruCurrencyConverter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4610C2592C9B42718FE537DA7EA72479 /* Pods-SailThruCurrencyConverter-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		207559DFF479386F41BFF526A6634A05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 17C593A179A4784515723668B85534AF;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B2FE492EED2D712C0A2366FB2EE6C55 /* Pods-SailThruCurrencyConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SailThruCurrencyConverter.release.xcconfig"; sourceTree = "<group>"; };
+		0B9F7828BBFBF68AA6B0CECF88D235AB /* Pods-SailThruCurrencyConverter.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SailThruCurrencyConverter.modulemap"; sourceTree = "<group>"; };
+		11CC8FF484A9FBD5767394595ED8838D /* Carnival.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Carnival.h; path = Carnival.framework/Headers/Carnival.h; sourceTree = "<group>"; };
+		1481D29E9BD5379FB28ABE33D722E4C7 /* cp_safari-7@2x~iphone.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari-7@2x~iphone.png"; path = "Carnival.framework/cp_safari-7@2x~iphone.png"; sourceTree = "<group>"; };
+		192783FE234F986DB706D96DF13F661E /* cp_stream_back_button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_stream_back_button@2x.png"; path = "Carnival.framework/cp_stream_back_button@2x.png"; sourceTree = "<group>"; };
+		23CD3FA18CBF593DC917312428ABD238 /* cp_close_button_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_close_button_white@2x.png"; path = "Carnival.framework/cp_close_button_white@2x.png"; sourceTree = "<group>"; };
+		248D2BBCE99B4B54E630A00A24038E46 /* CarnivalLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarnivalLogger.h; path = Carnival.framework/Headers/CarnivalLogger.h; sourceTree = "<group>"; };
+		3A9797B8E34535DD121BAFDE4253AA1F /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		41E7B0DA1BA57615BCD2386BCD2A422A /* Pods-SailThruCurrencyConverter-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SailThruCurrencyConverter-acknowledgements.markdown"; sourceTree = "<group>"; };
+		45836370A0DC3B368B9CC570BCD8508B /* CarnivalMessageStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarnivalMessageStream.h; path = Carnival.framework/Headers/CarnivalMessageStream.h; sourceTree = "<group>"; };
+		4610C2592C9B42718FE537DA7EA72479 /* Pods-SailThruCurrencyConverter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SailThruCurrencyConverter-dummy.m"; sourceTree = "<group>"; };
+		4886660163267C9851294847B1BB0FEF /* cp_safari-7@2x~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari-7@2x~ipad.png"; path = "Carnival.framework/cp_safari-7@2x~ipad.png"; sourceTree = "<group>"; };
+		515C13FC30C7DEAC7CF9EC316AC36B58 /* Pods-SailThruCurrencyConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SailThruCurrencyConverter.debug.xcconfig"; sourceTree = "<group>"; };
+		5408F9655E892977B26E56D52E74036B /* cp_stream_back_button_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_stream_back_button_white@2x.png"; path = "Carnival.framework/cp_stream_back_button_white@2x.png"; sourceTree = "<group>"; };
+		54D8E2E61030D6679F40680B93650B02 /* cp_safari~iphone.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari~iphone.png"; path = "Carnival.framework/cp_safari~iphone.png"; sourceTree = "<group>"; };
+		5897A86B225322DF8F0130B4636662DE /* Pods_SailThruCurrencyConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SailThruCurrencyConverter.framework; path = "Pods-SailThruCurrencyConverter.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A04793D9123CB34E41D9DD47D77C00A /* Pods-SailThruCurrencyConverter-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SailThruCurrencyConverter-acknowledgements.plist"; sourceTree = "<group>"; };
+		5E8C5C56C647FD167BE4BBB6507AC259 /* Pods-SailThruCurrencyConverter-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SailThruCurrencyConverter-resources.sh"; sourceTree = "<group>"; };
+		64D622D2C47A805CFCAF5C83593137D6 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66570E7D7E3B2F669DF895BCE0D487DC /* Pods-SailThruCurrencyConverter-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SailThruCurrencyConverter-frameworks.sh"; sourceTree = "<group>"; };
+		6FDABDFEE7A78518F1E496646EEE65B3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		713E87B39A15A0AE45053047ECCCD271 /* cp_safari-7~iphone.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari-7~iphone.png"; path = "Carnival.framework/cp_safari-7~iphone.png"; sourceTree = "<group>"; };
+		73560BA8E3F9F4BF45927B2F76A8647D /* cp_message_close_button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_message_close_button@2x.png"; path = "Carnival.framework/cp_message_close_button@2x.png"; sourceTree = "<group>"; };
+		78006E4A698C966D57BBA91BF6AC0F08 /* Pods-SailThruCurrencyConverter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SailThruCurrencyConverter-umbrella.h"; sourceTree = "<group>"; };
+		7F819331D70E3D241902743626B71C35 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		831EB2458ECBA1D08270A094430D3E7E /* cp_safari~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari~ipad.png"; path = "Carnival.framework/cp_safari~ipad.png"; sourceTree = "<group>"; };
+		892FF98510271C75A953F5EDCC857C1C /* cp_safari@2x~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari@2x~ipad.png"; path = "Carnival.framework/cp_safari@2x~ipad.png"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9574F1A79187C32818695743BFB8AC34 /* CarnivalMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarnivalMessage.h; path = Carnival.framework/Headers/CarnivalMessage.h; sourceTree = "<group>"; };
+		A06B9886B5EE86637417727A046AFE2C /* cp_refresh.png */ = {isa = PBXFileReference; includeInIndex = 1; name = cp_refresh.png; path = Carnival.framework/cp_refresh.png; sourceTree = "<group>"; };
+		A696FD901846F7E1D9D84C25120171B1 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		B0E027DA88C05164212389E08CE689FF /* cp_safari@3x~iphone.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari@3x~iphone.png"; path = "Carnival.framework/cp_safari@3x~iphone.png"; sourceTree = "<group>"; };
+		B9682B8E3FCE5EE8B97F87FCC5BADF7B /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		BE1D666968DCD4880395E59DB249283E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF390D267034D1943FB113A474122C0F /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		C20F91DE7E720ED9F716FCDB4C36C81D /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		C64667B25E8B699B0180650CAAE55A20 /* Carnival.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Carnival.framework; sourceTree = "<group>"; };
+		CA9FC1EBB2DB1C7373F13BE7DA7E165D /* cp_close_button@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_close_button@2x.png"; path = "Carnival.framework/cp_close_button@2x.png"; sourceTree = "<group>"; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		CDABB41327B47BFBCE038C7FFC18A813 /* cp_safari@2x~iphone.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari@2x~iphone.png"; path = "Carnival.framework/cp_safari@2x~iphone.png"; sourceTree = "<group>"; };
+		D77E3B27E69373AA652F0239E5F0BCB9 /* cp_share_button_white@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_share_button_white@2x.png"; path = "Carnival.framework/cp_share_button_white@2x.png"; sourceTree = "<group>"; };
+		DCF4F29E5601FDC52A772C1F2C355EBF /* cp_safari-7@3x~iphone.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari-7@3x~iphone.png"; path = "Carnival.framework/cp_safari-7@3x~iphone.png"; sourceTree = "<group>"; };
+		DF6A22F92C620D7F2E5C6D7B61B0914F /* cp_safari-7~ipad.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "cp_safari-7~ipad.png"; path = "Carnival.framework/cp_safari-7~ipad.png"; sourceTree = "<group>"; };
+		E7AD0AA7417C9D58964EFD35BC90AB4A /* CarnivalAttributes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CarnivalAttributes.h; path = Carnival.framework/Headers/CarnivalAttributes.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		810BCDA24FFC7B4929D39FCAC4E09DD5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C99BD7DDAA280FE1E4AAF5D509BD6C10 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3319C817C877D4DFE883C9BCF00AB38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				619BCADCB13E80A121D2053C69A7DA05 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		077EB97ECCFFC96C651076CC66816655 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				77882D91B1B3A1E5D27651EF3C51BF9E /* Pods-SailThruCurrencyConverter */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1FB6B9856496D71F5AFB1846790F453B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6FDABDFEE7A78518F1E496646EEE65B3 /* Info.plist */,
+				7F819331D70E3D241902743626B71C35 /* SwiftyJSON.modulemap */,
+				C20F91DE7E720ED9F716FCDB4C36C81D /* SwiftyJSON.xcconfig */,
+				3A9797B8E34535DD121BAFDE4253AA1F /* SwiftyJSON-dummy.m */,
+				A696FD901846F7E1D9D84C25120171B1 /* SwiftyJSON-prefix.pch */,
+				B9682B8E3FCE5EE8B97F87FCC5BADF7B /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		25B249268517C0E34C599EABA591ACE8 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				BF390D267034D1943FB113A474122C0F /* SwiftyJSON.swift */,
+				1FB6B9856496D71F5AFB1846790F453B /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		2D0B2A1AC2B39CDB482C92FB4016F5A4 /* Carnival */ = {
+			isa = PBXGroup;
+			children = (
+				11CC8FF484A9FBD5767394595ED8838D /* Carnival.h */,
+				E7AD0AA7417C9D58964EFD35BC90AB4A /* CarnivalAttributes.h */,
+				248D2BBCE99B4B54E630A00A24038E46 /* CarnivalLogger.h */,
+				9574F1A79187C32818695743BFB8AC34 /* CarnivalMessage.h */,
+				45836370A0DC3B368B9CC570BCD8508B /* CarnivalMessageStream.h */,
+				A84681CA5DA74755DC57AE59F59C49B0 /* Frameworks */,
+				B3617748A9E324880CEF52DD11088F8D /* Resources */,
+			);
+			name = Carnival;
+			path = Carnival;
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		77882D91B1B3A1E5D27651EF3C51BF9E /* Pods-SailThruCurrencyConverter */ = {
+			isa = PBXGroup;
+			children = (
+				BE1D666968DCD4880395E59DB249283E /* Info.plist */,
+				0B9F7828BBFBF68AA6B0CECF88D235AB /* Pods-SailThruCurrencyConverter.modulemap */,
+				41E7B0DA1BA57615BCD2386BCD2A422A /* Pods-SailThruCurrencyConverter-acknowledgements.markdown */,
+				5A04793D9123CB34E41D9DD47D77C00A /* Pods-SailThruCurrencyConverter-acknowledgements.plist */,
+				4610C2592C9B42718FE537DA7EA72479 /* Pods-SailThruCurrencyConverter-dummy.m */,
+				66570E7D7E3B2F669DF895BCE0D487DC /* Pods-SailThruCurrencyConverter-frameworks.sh */,
+				5E8C5C56C647FD167BE4BBB6507AC259 /* Pods-SailThruCurrencyConverter-resources.sh */,
+				78006E4A698C966D57BBA91BF6AC0F08 /* Pods-SailThruCurrencyConverter-umbrella.h */,
+				515C13FC30C7DEAC7CF9EC316AC36B58 /* Pods-SailThruCurrencyConverter.debug.xcconfig */,
+				0B2FE492EED2D712C0A2366FB2EE6C55 /* Pods-SailThruCurrencyConverter.release.xcconfig */,
+			);
+			name = "Pods-SailThruCurrencyConverter";
+			path = "Target Support Files/Pods-SailThruCurrencyConverter";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				8B390A10B21D53FAFC38E0F6E8380AF9 /* Pods */,
+				CB6CFF88B5D8C3590E38884B5BCE81EC /* Products */,
+				077EB97ECCFFC96C651076CC66816655 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B390A10B21D53FAFC38E0F6E8380AF9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D0B2A1AC2B39CDB482C92FB4016F5A4 /* Carnival */,
+				25B249268517C0E34C599EABA591ACE8 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A84681CA5DA74755DC57AE59F59C49B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C64667B25E8B699B0180650CAAE55A20 /* Carnival.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3617748A9E324880CEF52DD11088F8D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CA9FC1EBB2DB1C7373F13BE7DA7E165D /* cp_close_button@2x.png */,
+				23CD3FA18CBF593DC917312428ABD238 /* cp_close_button_white@2x.png */,
+				73560BA8E3F9F4BF45927B2F76A8647D /* cp_message_close_button@2x.png */,
+				A06B9886B5EE86637417727A046AFE2C /* cp_refresh.png */,
+				4886660163267C9851294847B1BB0FEF /* cp_safari-7@2x~ipad.png */,
+				1481D29E9BD5379FB28ABE33D722E4C7 /* cp_safari-7@2x~iphone.png */,
+				DCF4F29E5601FDC52A772C1F2C355EBF /* cp_safari-7@3x~iphone.png */,
+				DF6A22F92C620D7F2E5C6D7B61B0914F /* cp_safari-7~ipad.png */,
+				713E87B39A15A0AE45053047ECCCD271 /* cp_safari-7~iphone.png */,
+				892FF98510271C75A953F5EDCC857C1C /* cp_safari@2x~ipad.png */,
+				CDABB41327B47BFBCE038C7FFC18A813 /* cp_safari@2x~iphone.png */,
+				B0E027DA88C05164212389E08CE689FF /* cp_safari@3x~iphone.png */,
+				831EB2458ECBA1D08270A094430D3E7E /* cp_safari~ipad.png */,
+				54D8E2E61030D6679F40680B93650B02 /* cp_safari~iphone.png */,
+				D77E3B27E69373AA652F0239E5F0BCB9 /* cp_share_button_white@2x.png */,
+				192783FE234F986DB706D96DF13F661E /* cp_stream_back_button@2x.png */,
+				5408F9655E892977B26E56D52E74036B /* cp_stream_back_button_white@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB6CFF88B5D8C3590E38884B5BCE81EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5897A86B225322DF8F0130B4636662DE /* Pods_SailThruCurrencyConverter.framework */,
+				64D622D2C47A805CFCAF5C83593137D6 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		517B12DB00B9347756AA9881AF03326B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38633FFD36BFC33CD34749204490A4B /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90C915AB8781E7DA5B62B88A0FBA6196 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F7DF0EED628B2CAAE6C85389B2F5F4C /* Pods-SailThruCurrencyConverter-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		17C593A179A4784515723668B85534AF /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D792F4D03DC7A60B06319CFEA910CE8B /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				7E084C168594474F95C10862AD24D25E /* Sources */,
+				E3319C817C877D4DFE883C9BCF00AB38 /* Frameworks */,
+				517B12DB00B9347756AA9881AF03326B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 64D622D2C47A805CFCAF5C83593137D6 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C24F391DF7188F7B77062069A00AFB4A /* Pods-SailThruCurrencyConverter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A474F5DA8D220DAF3A0C22EB637EAAD5 /* Build configuration list for PBXNativeTarget "Pods-SailThruCurrencyConverter" */;
+			buildPhases = (
+				357C49687116637BF3D5A38D328339AD /* Sources */,
+				810BCDA24FFC7B4929D39FCAC4E09DD5 /* Frameworks */,
+				90C915AB8781E7DA5B62B88A0FBA6196 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				093DACB75AD1D8EE8CBF4B3193D47056 /* PBXTargetDependency */,
+			);
+			name = "Pods-SailThruCurrencyConverter";
+			productName = "Pods-SailThruCurrencyConverter";
+			productReference = 5897A86B225322DF8F0130B4636662DE /* Pods_SailThruCurrencyConverter.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CB6CFF88B5D8C3590E38884B5BCE81EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C24F391DF7188F7B77062069A00AFB4A /* Pods-SailThruCurrencyConverter */,
+				17C593A179A4784515723668B85534AF /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		357C49687116637BF3D5A38D328339AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8C258FD2151352460EF25D88490D6D2 /* Pods-SailThruCurrencyConverter-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E084C168594474F95C10862AD24D25E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14AF973C15798EC3B1A5F09E9421A4F0 /* SwiftyJSON-dummy.m in Sources */,
+				7171AE1955F6200FCEB4A82B2332F532 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		093DACB75AD1D8EE8CBF4B3193D47056 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 17C593A179A4784515723668B85534AF /* SwiftyJSON */;
+			targetProxy = 207559DFF479386F41BFF526A6634A05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3563D8ADD9577D7504E99C17B76B754E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 515C13FC30C7DEAC7CF9EC316AC36B58 /* Pods-SailThruCurrencyConverter.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SailThruCurrencyConverter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SailThruCurrencyConverter/Pods-SailThruCurrencyConverter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SailThruCurrencyConverter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		573390A9CB687B09838F338D12FB47CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B2FE492EED2D712C0A2366FB2EE6C55 /* Pods-SailThruCurrencyConverter.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SailThruCurrencyConverter/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SailThruCurrencyConverter/Pods-SailThruCurrencyConverter.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SailThruCurrencyConverter;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		81EB7A3B0EDFE9756BEC5D53E305B7DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20F91DE7E720ED9F716FCDB4C36C81D /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9BFBA17D3CBDBDC82265B017EEAED8F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20F91DE7E720ED9F716FCDB4C36C81D /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9C7A5EE6DE2C3784BAA89D1A5D5EB30D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE5513B3E35A5C69E7F70F186BD3CE9C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE5513B3E35A5C69E7F70F186BD3CE9C /* Debug */,
+				9C7A5EE6DE2C3784BAA89D1A5D5EB30D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A474F5DA8D220DAF3A0C22EB637EAAD5 /* Build configuration list for PBXNativeTarget "Pods-SailThruCurrencyConverter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3563D8ADD9577D7504E99C17B76B754E /* Debug */,
+				573390A9CB687B09838F338D12FB47CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D792F4D03DC7A60B06319CFEA910CE8B /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFBA17D3CBDBDC82265B017EEAED8F6 /* Debug */,
+				81EB7A3B0EDFE9756BEC5D53E305B7DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

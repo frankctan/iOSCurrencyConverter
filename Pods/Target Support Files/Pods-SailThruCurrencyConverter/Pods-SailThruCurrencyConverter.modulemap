@@ -1,0 +1,6 @@
+framework module Pods_SailThruCurrencyConverter {
+  umbrella header "Pods-SailThruCurrencyConverter-umbrella.h"
+
+  export *
+  module * { export * }
+}

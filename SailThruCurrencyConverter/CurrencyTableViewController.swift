@@ -103,8 +103,10 @@ class CurrencyTableViewController: UITableViewController {
         cell.inputTextField?.isHidden = !isConvertFrom
         cell.amountLabel?.isHidden = isConvertFrom
 
-        cell.amountLabel?.text = formatter.string(from: NSNumber(value: currency.value))
+        let amount = formatter.string(from: NSNumber(value: currency.value))
+        cell.amountLabel?.text = amount
         cell.currencyLabel?.text = currency.name
+        cell.inputTextField.placeholder = amount
 
         let toolbar =
             UIToolbar(frame: CGRect(origin: .zero,
@@ -125,7 +127,10 @@ class CurrencyTableViewController: UITableViewController {
 
     @objc func doneButtonDidTap(_ sender: UIBarButtonItem) {
         let cell = self.tableView.cellForRow(at: IndexPath.init(row: 0, section: 0)) as! CurrencyTableViewCell
-        let value = Double(cell.inputTextField?.text ?? "0.0") ?? 0.0
+        var value = Double(cell.inputTextField?.text ?? "0.0") ?? 0.0
+        if value == 0 {
+            value = Double(cell.inputTextField?.placeholder ?? "0.0") ?? 0.0
+        }
         self.setConvertFrom(value: value)
         cell.inputTextField.text = formatter.string(from: NSNumber(value: value))
         cell.inputTextField.resignFirstResponder()
@@ -164,6 +169,8 @@ class CurrencyTableViewController: UITableViewController {
             self.convertFrom = item
 
             self.tableView.reloadData()
+            let cell = self.tableView.cellForRow(at: IndexPath.init(row: 0, section: 0)) as! CurrencyTableViewCell
+            cell.inputTextField.becomeFirstResponder()
         }
     }
 

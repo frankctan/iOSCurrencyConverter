@@ -12,6 +12,7 @@ import UIKit
 class CurrencyTableViewCell: UITableViewCell {
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var currencyLabel: UILabel!
+    @IBOutlet weak var inputTextField: UITextField!
     @IBOutlet weak var wrapView: UIView! {
         didSet {
             self.wrapView.layer.cornerRadius = 10.0

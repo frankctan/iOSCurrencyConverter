@@ -8,9 +8,6 @@
 
 import UIKit
 
-// MARK: - Placeholder.
-class CurrencyTableViewCell: UITableViewCell {}
-
 /// Base in USD.
 struct Currency {
     let name: String
@@ -29,7 +26,6 @@ class CurrencyTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.register(CurrencyTableViewCell.self, forCellReuseIdentifier: "cell")
         self.tableView.isEditing = true
         self.tableView.separatorStyle = .none
 
@@ -69,9 +65,13 @@ class CurrencyTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = UIView()
-        header.backgroundColor = .blue
-        return header
+        let currencyHeaderView = Bundle.main.loadNibNamed("CurrencyHeaderView",
+                                                         owner: nil,
+                                                         options: nil)?[0] as! CurrencyHeaderView
+
+        currencyHeaderView.conversionLabel.text = section == 0 ? "CONVERT FROM " : "CONVERT TO "
+
+        return currencyHeaderView
     }
 
     override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -85,14 +85,18 @@ class CurrencyTableViewController: UITableViewController {
                                                       for: indexPath) as! CurrencyTableViewCell
 
         let currency = indexPath.section == 0 ? self.convertFrom : self.convertTo[indexPath.row]
-        cell.detailTextLabel?.text = currency.name
-        cell.textLabel?.text = String(currency.value)
+        cell.amountLabel?.text = String(currency.value)
+        cell.currencyLabel?.text = currency.name
 
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return (self.tableView.bounds.height + self.tableView.bounds.origin.y - 100) / 4
+    }
+
     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        return true
+        return indexPath.section == 1
     }
 
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {

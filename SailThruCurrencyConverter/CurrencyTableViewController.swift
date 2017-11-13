@@ -9,9 +9,9 @@
 import UIKit
 
 /// Base in USD.
-struct Currency {
+class Currency {
     let name: String
-    let value: Double
+    var value: Double
 
     init(name: String, value: Double) {
         self.name = name
@@ -21,8 +21,18 @@ struct Currency {
 
 class CurrencyTableViewController: UITableViewController {
 
+    private var rates: [String: Double] = [Constants.USD : 1.0]
     private var convertFrom = Currency.init(name: Constants.USD, value: 1)
     private var convertTo = [Currency]()
+
+    let formatter: NumberFormatter = {
+        let _formatter = NumberFormatter()
+        _formatter.numberStyle = .decimal
+        _formatter.minimumFractionDigits = 2
+        _formatter.maximumFractionDigits = 2
+        _formatter.usesGroupingSeparator = true
+        return _formatter
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +53,10 @@ class CurrencyTableViewController: UITableViewController {
             self.convertTo = rate.rates.map({ (dict) -> Currency in
                 return Currency(name: dict.key, value: dict.value)
             })
+
+            for r in rate.rates {
+                self.rates[r.key] = r.value
+            }
 
             DispatchQueue.main.async {
                 self.tableView.reloadData()
@@ -84,11 +98,46 @@ class CurrencyTableViewController: UITableViewController {
         let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell",
                                                       for: indexPath) as! CurrencyTableViewCell
 
-        let currency = indexPath.section == 0 ? self.convertFrom : self.convertTo[indexPath.row]
-        cell.amountLabel?.text = String(currency.value)
+        let isConvertFrom = indexPath.section == 0
+        let currency = isConvertFrom ? self.convertFrom : self.convertTo[indexPath.row]
+        cell.inputTextField?.isHidden = !isConvertFrom
+        cell.amountLabel?.isHidden = isConvertFrom
+
+        cell.amountLabel?.text = formatter.string(from: NSNumber(value: currency.value))
         cell.currencyLabel?.text = currency.name
 
+        let toolbar =
+            UIToolbar(frame: CGRect(origin: .zero,
+                                    size: CGSize(width: self.tableView.bounds.width, height: 50)))
+        let doneItem = UIBarButtonItem(title: "convert",
+                                       style: .done,
+                                       target: self,
+                                       action: #selector(doneButtonDidTap(_:)))
+        let flex1 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        let flex2 = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+
+        toolbar.items = [flex1, doneItem, flex2]
+        toolbar.sizeToFit()
+        cell.inputTextField?.inputAccessoryView = toolbar
+
         return cell
+    }
+
+    @objc func doneButtonDidTap(_ sender: UIBarButtonItem) {
+        let cell = self.tableView.cellForRow(at: IndexPath.init(row: 0, section: 0)) as! CurrencyTableViewCell
+        let value = Double(cell.inputTextField?.text ?? "0.0") ?? 0.0
+        self.setConvertFrom(value: value)
+        cell.inputTextField.text = formatter.string(from: NSNumber(value: value))
+        cell.inputTextField.resignFirstResponder()
+        self.tableView.reloadData()
+    }
+
+    func setConvertFrom(value: Double) {
+        self.convertFrom.value = value
+        for currency in convertTo {
+            let rate = (self.rates[currency.name] ?? 0.0) / (self.rates[self.convertFrom.name] ?? 1.0)
+            currency.value = value * rate
+        }
     }
 
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Currency {
+struct Constants {
     static let USD = "USD"
     static let EUR = "EUR"
     static let GBP = "GBP"

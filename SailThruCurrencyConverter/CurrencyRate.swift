@@ -27,25 +27,25 @@ struct CurrencyRate {
 
         let ratesJSON = json["rates"]
 
-        guard let eur = ratesJSON[Currency.EUR].double else {
+        guard let eur = ratesJSON[Constants.EUR].double else {
             print("no EUR currency")
             throw CurrencyError.noData
         }
 
-        guard let gbp = ratesJSON[Currency.GBP].double else {
+        guard let gbp = ratesJSON[Constants.GBP].double else {
             print("no GBP currency")
             throw CurrencyError.noData
         }
 
-        guard let nzd = ratesJSON[Currency.NZD].double else {
+        guard let nzd = ratesJSON[Constants.NZD].double else {
             print("no NZD currency")
             throw CurrencyError.noData
         }
 
         var ratesDict = [String: Double]()
-        ratesDict[Currency.EUR] = eur
-        ratesDict[Currency.GBP] = gbp
-        ratesDict[Currency.NZD] = nzd
+        ratesDict[Constants.EUR] = eur
+        ratesDict[Constants.GBP] = gbp
+        ratesDict[Constants.NZD] = nzd
 
         self.date = date
         self.rates = ratesDict

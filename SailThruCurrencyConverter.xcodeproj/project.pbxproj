@@ -35,6 +35,8 @@
 		67DE0D891FB935E70046195A /* CurrencyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableViewCell.swift; sourceTree = "<group>"; };
 		67DE0D8B1FB93A2C0046195A /* CurrencyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyHeaderView.swift; sourceTree = "<group>"; };
 		67DE0D8D1FB93ABD0046195A /* CurrencyHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyHeaderView.xib; sourceTree = "<group>"; };
+		67DE0D8F1FB95C3E0046195A /* SailThruCurrencyConverter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SailThruCurrencyConverter-Bridging-Header.h"; sourceTree = "<group>"; };
+		67DE0D921FB95FEC0046195A /* SailThruCurrencyConverter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SailThruCurrencyConverter.entitlements; sourceTree = "<group>"; };
 		97704521A8F2D3E705FF859A /* Pods-SailThruCurrencyConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailThruCurrencyConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SailThruCurrencyConverter/Pods-SailThruCurrencyConverter.release.xcconfig"; sourceTree = "<group>"; };
 		9F9A489DE66A4BF6D377F9B1 /* Pods-SailThruCurrencyConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailThruCurrencyConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SailThruCurrencyConverter/Pods-SailThruCurrencyConverter.debug.xcconfig"; sourceTree = "<group>"; };
 		D0377B7D5CA5731FDE3EDED6 /* Pods_SailThruCurrencyConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SailThruCurrencyConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,7 @@
 		67DE0D6E1FB772750046195A /* SailThruCurrencyConverter */ = {
 			isa = PBXGroup;
 			children = (
+				67DE0D921FB95FEC0046195A /* SailThruCurrencyConverter.entitlements */,
 				67DE0D6F1FB772750046195A /* AppDelegate.swift */,
 				67DE0D811FB7743A0046195A /* CurrencyTableViewController.swift */,
 				67DE0D891FB935E70046195A /* CurrencyTableViewCell.swift */,
@@ -85,6 +88,7 @@
 				67DE0D7B1FB772750046195A /* Info.plist */,
 				67DE0D851FB77AAB0046195A /* CurrencyRate.swift */,
 				67DE0D871FB77AC60046195A /* Strings.swift */,
+				67DE0D8F1FB95C3E0046195A /* SailThruCurrencyConverter-Bridging-Header.h */,
 			);
 			path = SailThruCurrencyConverter;
 			sourceTree = "<group>";
@@ -141,7 +145,13 @@
 				TargetAttributes = {
 					67DE0D6B1FB772750046195A = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -374,12 +384,19 @@
 			baseConfigurationReference = 9F9A489DE66A4BF6D377F9B1 /* Pods-SailThruCurrencyConverter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SailThruCurrencyConverter/SailThruCurrencyConverter.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XPHUJ78MCR;
 				INFOPLIST_FILE = SailThruCurrencyConverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.frankctan.SailThruCurrencyConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SailThruCurrencyConverter/SailThruCurrencyConverter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -390,12 +407,18 @@
 			baseConfigurationReference = 97704521A8F2D3E705FF859A /* Pods-SailThruCurrencyConverter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SailThruCurrencyConverter/SailThruCurrencyConverter.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XPHUJ78MCR;
 				INFOPLIST_FILE = SailThruCurrencyConverter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.frankctan.SailThruCurrencyConverter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SailThruCurrencyConverter/SailThruCurrencyConverter-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

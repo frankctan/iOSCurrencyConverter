@@ -139,13 +139,17 @@ class CurrencyTableViewController: UITableViewController {
         self.tableView.reloadData()
 
         let attributes = CarnivalAttributes()
-        attributes.setBool(self.doneFlag, forKey: "sampleBool")
+        if value > 10000 {
+            attributes.setBool(true, forKey: "sampleBool")
+        } else {
+            attributes.setBool(false, forKey: "sampleBool")
+        }
+
         Carnival.setAttributes(attributes) { (errorOrNil) in
             if let error = errorOrNil {
                 print(error)
             }
         }
-        self.doneFlag = !self.doneFlag
 
     }
 

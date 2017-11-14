@@ -17,6 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         Carnival.startEngine("6decb4a57343083c4eacd14f7edd38f9629075fb")
+        Carnival.setUserId(String.random(length: 5)) { errorOrNil in
+            if let error = errorOrNil {
+                print("setUserID returned with possible error: \(error)")
+            }
+        }
+
+
+
+
         return true
     }
 

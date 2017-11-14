@@ -19,6 +19,7 @@
 		67DE0D8A1FB935E70046195A /* CurrencyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE0D891FB935E70046195A /* CurrencyTableViewCell.swift */; };
 		67DE0D8C1FB93A2C0046195A /* CurrencyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67DE0D8B1FB93A2C0046195A /* CurrencyHeaderView.swift */; };
 		67DE0D8E1FB93ABD0046195A /* CurrencyHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 67DE0D8D1FB93ABD0046195A /* CurrencyHeaderView.xib */; };
+		67ED86D41FBB3C7800D2052B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67ED86D31FBB3C7800D2052B /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		67DE0D8D1FB93ABD0046195A /* CurrencyHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyHeaderView.xib; sourceTree = "<group>"; };
 		67DE0D8F1FB95C3E0046195A /* SailThruCurrencyConverter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SailThruCurrencyConverter-Bridging-Header.h"; sourceTree = "<group>"; };
 		67DE0D921FB95FEC0046195A /* SailThruCurrencyConverter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SailThruCurrencyConverter.entitlements; sourceTree = "<group>"; };
+		67ED86D31FBB3C7800D2052B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		97704521A8F2D3E705FF859A /* Pods-SailThruCurrencyConverter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailThruCurrencyConverter.release.xcconfig"; path = "Pods/Target Support Files/Pods-SailThruCurrencyConverter/Pods-SailThruCurrencyConverter.release.xcconfig"; sourceTree = "<group>"; };
 		9F9A489DE66A4BF6D377F9B1 /* Pods-SailThruCurrencyConverter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SailThruCurrencyConverter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SailThruCurrencyConverter/Pods-SailThruCurrencyConverter.debug.xcconfig"; sourceTree = "<group>"; };
 		D0377B7D5CA5731FDE3EDED6 /* Pods_SailThruCurrencyConverter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SailThruCurrencyConverter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +80,7 @@
 				67DE0D921FB95FEC0046195A /* SailThruCurrencyConverter.entitlements */,
 				67DE0D6F1FB772750046195A /* AppDelegate.swift */,
 				67DE0D811FB7743A0046195A /* CurrencyTableViewController.swift */,
+				67ED86D31FBB3C7800D2052B /* Extensions.swift */,
 				67DE0D891FB935E70046195A /* CurrencyTableViewCell.swift */,
 				67DE0D8B1FB93A2C0046195A /* CurrencyHeaderView.swift */,
 				67DE0D8D1FB93ABD0046195A /* CurrencyHeaderView.xib */,
@@ -243,6 +246,7 @@
 				67DE0D861FB77AAB0046195A /* CurrencyRate.swift in Sources */,
 				67DE0D841FB774C50046195A /* Communicator.swift in Sources */,
 				67DE0D881FB77AC60046195A /* Strings.swift in Sources */,
+				67ED86D41FBB3C7800D2052B /* Extensions.swift in Sources */,
 				67DE0D821FB7743A0046195A /* CurrencyTableViewController.swift in Sources */,
 				67DE0D8A1FB935E70046195A /* CurrencyTableViewCell.swift in Sources */,
 				67DE0D701FB772750046195A /* AppDelegate.swift in Sources */,

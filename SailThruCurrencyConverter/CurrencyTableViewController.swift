@@ -125,6 +125,8 @@ class CurrencyTableViewController: UITableViewController {
         return cell
     }
 
+    var doneFlag = false;
+
     @objc func doneButtonDidTap(_ sender: UIBarButtonItem) {
         let cell = self.tableView.cellForRow(at: IndexPath.init(row: 0, section: 0)) as! CurrencyTableViewCell
         var value = Double(cell.inputTextField?.text ?? "0.0") ?? 0.0
@@ -135,6 +137,16 @@ class CurrencyTableViewController: UITableViewController {
         cell.inputTextField.text = formatter.string(from: NSNumber(value: value))
         cell.inputTextField.resignFirstResponder()
         self.tableView.reloadData()
+
+        let attributes = CarnivalAttributes()
+        attributes.setBool(self.doneFlag, forKey: "sampleBool")
+        Carnival.setAttributes(attributes) { (errorOrNil) in
+            if let error = errorOrNil {
+                print(error)
+            }
+        }
+        self.doneFlag = !self.doneFlag
+
     }
 
     func setConvertFrom(value: Double) {
